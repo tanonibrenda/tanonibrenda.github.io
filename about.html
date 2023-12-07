@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,80 +10,46 @@
     <link href="./public/images/hand_yes_ok_okay_cool_good_thumbs_up_sticker_icon_258406.ico" rel="icon">
     <link href="./public/css/style.css" rel="stylesheet">
 
-    
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
 
-        header {
-            height: 100%;
-            width: 100%;
-            border: none;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none; 
-        }
-        
-        main .container:not(:first-child) {
-            display: flex;
-             flex-wrap: wrap;
-            justify-content: space-around;
-}
-    
-        main .container:first-child {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-direction: column;
-            height: 70%; 
-}
-     
-       
-
-        .card img {
-            max-width: 150px;
-            height: auto;
-
-}
-/* Media query */
-        @media (max-width: 768px) {
-            .card {
-            width: calc(50% - 20px); 
-    }
-}
-
-        @media (max-width: 576px) {
-            .card {
-            width: calc(100% - 20px); 
-    }
-}
-    </style>
 </head>
 <body>
-<header>
-<iframe src="./public/partials/header.html"></iframe>
-</header>
+    <header>
+        <iframe src="./public/partials/header.html"></iframe>
+    </header>
 <main class="container mt-5">
-    <div class="container">
+
+     <div class="container" id="encabezado" style="margin-bottom: 25px; margin-top: 0px;">
         <div>
             <h2>Let me tell you about myself</h2>
-         <div>
-         <p>I am a highly skilled and efficient virtual assistant dedicated to streamlining tasks and enhancing productivity. With a strong background in administrative support, I offer a diverse set of skills to meet your business needs. Proficient in various software applications, including Microsoft Word and Excel, I am committed to ensuring smooth operations and delivering results with precision. Allow me to be your reliable virtual partner, managing tasks seamlessly and contributing to the success of your projects.</p>
-         </div>
+            <div>
+                <p id="presentation_about">I am a highly skilled and efficient virtual assistant dedicated to streamlining tasks and enhancing productivity. With a strong background in administrative support, I offer a diverse set of skills to meet your business needs. Proficient in various software applications, including Microsoft Word and Excel, I am committed to ensuring smooth operations and delivering results with precision. Allow me to be your reliable virtual partner, managing tasks seamlessly and contributing to the success of your projects.</p>
+            </div>
+        </div>
     </div>
-    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    
+
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="./public/images/about/video.png" alt="filmer">
+            </figure>
+            <div class="contenido">
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <section class="row row-cols-1 row-cols-md-2 row-cols-lg-4 mb-n2">
         <div class="col">
             <div class="card">
                 <img src="../public/images/about/languajes.gif" class="card-img-top" alt="Flags of Spain, England, and Italy">
                 <div class="card-body">
-                    <p class="card-text">I'm native Spanish speaker, intermediate level of English and Italian</p>
+                    <p class="card-text ">I'm native Spanish speaker, intermediate level of English and Italian</p>
                 </div>
             </div>
         </div>
@@ -150,7 +117,8 @@
             </div>
         </div>
     </section>
-<section>
+
+    <section>
     <div>
         <h2>Education</h2>
         <div class="card" style="width: 18rem;">
