@@ -194,3 +194,10 @@ main {
 #contact_link{
   max-width: 20px;
 }
+
+
+
+/* prueba de ocultar */
+.containerShow{
+  display: none;
+}
